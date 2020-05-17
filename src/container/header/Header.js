@@ -81,8 +81,10 @@ const Header = () => {
 									</ul>
 								</div>
 								<div className='menu_btn'>
-									<Link to='#' className='btn_1 d-none d-sm-block'>
-										book a tabel
+									<Link
+										to='/login'
+										className='single_page_btn d-none d-sm-block'>
+										Login
 									</Link>
 								</div>
 							</nav>
