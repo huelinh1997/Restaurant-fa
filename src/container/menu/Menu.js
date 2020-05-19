@@ -4,7 +4,7 @@ import TabControl from "../../component/tab/TabControl";
 import ImgFood from "../../img/food_menu/single_food_4.png";
 import Button from "@material-ui/core/Button";
 import { connect } from "react-redux";
-import { submitOrderRequest } from "../../action/Menu";
+import { submitOrderRequest } from "../../action/Action";
 
 const Menu = ({ SubmitOrder }) => {
 	let menu = [

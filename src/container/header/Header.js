@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 import logo from "../../img/logo2.png";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-const Header = () => {
+const Header = ({ isLogIn }) => {
 	return (
 		<Fragment>
 			<header className='main_menu '>
@@ -84,7 +85,7 @@ const Header = () => {
 									<Link
 										to='/login'
 										className='single_page_btn d-none d-sm-block'>
-										Login
+										{isLogIn ? "Account" : "Login"}
 									</Link>
 								</div>
 							</nav>
@@ -96,4 +97,10 @@ const Header = () => {
 	);
 };
 
-export default Header;
+const mapStateToProps = (state) => {
+	return {
+		isLogIn: state.isLoggedIn,
+	};
+};
+
+export default connect(mapStateToProps)(Header);

@@ -1,7 +1,8 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import FacebookLogin from "react-facebook-login";
+import { connect } from "react-redux";
 
-const Facebook = () => {
+const Facebook = ({ saveInfoUser, isLogIn }) => {
 	const [isLoggedIn, setIsLoggin] = useState(false);
 	const [userId, setUserId] = useState("");
 	const [name, setName] = useState("");
@@ -14,6 +15,9 @@ const Facebook = () => {
 
 	const responseFacebook = (response) => {
 		console.log("res:", response);
+		if (response) {
+			saveInfoUser(response);
+		}
 		setIsLoggin(true);
 		setUserId(response.userId);
 		setName(response.name);
@@ -51,4 +55,10 @@ const Facebook = () => {
 	);
 };
 
-export default Facebook;
+const mapStateToProps = (state) => {
+	return {
+		isLogIn: state.isLoggedIn,
+	};
+};
+
+export default connect(mapStateToProps)(Facebook);
