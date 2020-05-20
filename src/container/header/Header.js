@@ -45,8 +45,8 @@ const Header = ({ isLogIn }) => {
 											</Link>
 										</li>
 										<li className='nav-item'>
-											<Link className='nav-link' to='/'>
-												Chefs
+											<Link className='nav-link' to='/booking'>
+												Booking
 											</Link>
 										</li>
 										<li className='nav-item dropdown'>
