@@ -3,6 +3,7 @@ import Home from "./container/home/Home";
 import Menu from "./container/menu/Menu";
 import Login from "./container/login/Login";
 import Personal from "./container/Personal/Personal";
+import Booking from "./container/Booking/index";
 
 const routes = [
 	{
@@ -25,6 +26,11 @@ const routes = [
 		exact: false,
 		main: ({ history }) => <Personal history={history} />,
 	},
+	{
+		path: '/booking',
+		exact: false,
+		main: ({ history }) => <Booking history={history} />,
+	}
 ];
 
 export default routes;
