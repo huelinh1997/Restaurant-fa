@@ -3,7 +3,7 @@ import Home from "./container/home/Home";
 import Menu from "./container/menu/Menu";
 import Login from "./container/login/Login";
 import Personal from "./container/Personal/Personal";
-import Booking from "./container/Booking/index";
+import Booking from "./container/Booking/Booking";
 
 const routes = [
 	{
