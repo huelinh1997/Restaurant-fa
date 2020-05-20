@@ -7,7 +7,8 @@ import { saveUserAction } from "../../action/Action";
 const Login = ({ saveInfoUser, isLogIn }) => {
 	return (
 		<Fragment>
-			<div style={{ height: "90vh" }}>
+			<div
+				style={{ height: "90vh", paddingTop: "110px", marginBottom: "100px" }}>
 				<div className='container mt-5'>
 					<div className='d-flex align-content-center justify-content-center'>
 						<span className='col-md-6'>

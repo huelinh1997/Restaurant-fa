@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 const Header = ({ isLogIn }) => {
 	return (
 		<Fragment>
-			<header className='main_menu '>
+			<header className='main_menu menu_fixed animated fadeInDown '>
 				<div className='container'>
 					<div className='row align-items-center'>
 						<div className='col-lg-12'>
@@ -35,8 +35,8 @@ const Header = ({ isLogIn }) => {
 											</Link>
 										</li>
 										<li className='nav-item'>
-											<Link className='nav-link' to=''>
-												About
+											<Link className='nav-link' to='/personal'>
+												Personal
 											</Link>
 										</li>
 										<li className='nav-item'>

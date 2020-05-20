@@ -4,11 +4,12 @@ import foodItem1 from "../../img/food_item/food_item_1.png";
 import foodItem2 from "../../img/food_item/food_item_2.png";
 import foodItem3 from "../../img/food_item/food_item_3.png";
 import left_2 from "../../img/icon/left_2.svg";
+import imgSlider from "../../img/slider-1.jpg";
 
 const Our = () => {
 	return (
 		<Fragment>
-			<section class='exclusive_item_part blog_item_section'>
+			<section class='exclusive_item_part blog_item_section pt-5'>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-xl-5'>
@@ -90,6 +91,7 @@ const Our = () => {
 					</div>
 				</div>
 			</section>
+
 			<section className='about_part'>
 				<div className='container-fluid'>
 					<div className='row align-items-center'>

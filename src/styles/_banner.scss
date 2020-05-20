@@ -218,3 +218,262 @@
 }
 
 /**************** hero part css end ****************/
+
+.cover_1 {
+	position: relative;
+	overflow: hidden;
+}
+.bg-light {
+	background-color: #f8f9fa !important;
+}
+
+.cover_1.overlay:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0.2;
+}
+
+.img_bg {
+	background-size: cover;
+	background-image: url("../img/slider4.jpg");
+	background-position: 50% -25px;
+}
+
+.cover_1 .img_bg,
+.cover_1 .img_bg > .container > .row {
+	min-height: 700px;
+	height: 100vh;
+}
+
+.cover_1 .heading {
+	color: white;
+	font-size: 70px;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+.btn:not(:disabled):not(.disabled) {
+	cursor: pointer;
+}
+
+.btn.btn-outline-white {
+	border: 2px solid #fff;
+	background: none;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn.btn-outline-white:hover {
+	background: #fff;
+	color: #000;
+	border: 2px solid transparent;
+}
+
+#colorlib-aside {
+	padding-top: 3em;
+	padding-bottom: 40px;
+	float: left;
+	width: 300px;
+	//position: fixed;
+	overflow-y: scroll;
+	z-index: 1001;
+	background: #f2f3f7;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	height: calc(100vh + 110px);
+}
+
+.text-center {
+	text-align: center;
+}
+
+#colorlib-aside .author-img {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.author-img {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	background-image: url(../img/about.jpg);
+}
+
+#colorlib-aside #colorlib-logo {
+	text-align: center;
+	font-weight: 700;
+	font-size: 22px;
+	margin-bottom: 0.5em;
+	display: block;
+	width: 100%;
+}
+#colorlib-aside .position {
+	display: block;
+	margin-bottom: 2em;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#colorlib-aside #colorlib-main-menu {
+	display: block;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		border-radius: 4px;
+	}
+}
+
+.navbar {
+	position: relative;
+	min-height: 55px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+}
+
+.navbar:before,
+.navbar:after {
+	content: " ";
+	display: table;
+}
+
+#colorlib-aside #colorlib-main-menu .collapse {
+	display: block !important;
+}
+
+#colorlib-aside #colorlib-main-menu ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#colorlib-aside #colorlib-main-menu ul li {
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.navbar:after {
+	clear: both;
+}
+
+.navbar:after {
+	content: " ";
+	display: table;
+}
+
+#colorlib-aside .colorlib-footer {
+	font-size: 15px;
+	text-align: center;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.5);
+	padding: 0 20px;
+	width: 100%;
+}
+
+#colorlib-aside .colorlib-footer ul {
+	padding: 0;
+	margin: 0;
+}
+
+#colorlib-aside .colorlib-footer ul li {
+	padding: 0;
+	margin: 0;
+	display: inline;
+	list-style: none;
+}
+
+#colorlib-main {
+	width: calc(100% - 300px);
+	float: right;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#colorlib-hero {
+	min-height: 500px;
+	//background: #fff url(../img/loader.gif) no-repeat center center;
+	width: 100%;
+	float: left;
+	margin-bottom: 10em;
+	clear: both;
+}
+#colorlib-hero .flexslider {
+	border: none;
+	z-index: 1;
+	margin-bottom: 0;
+}
+
+.flexslider {
+	margin: 0 0 60px;
+	background: #ffffff;
+	border: 4px solid #ffffff;
+	position: relative;
+	zoom: 1;
+}
+
+#colorlib-hero .flexslider .slides {
+	position: relative;
+	overflow: visible;
+}
+.flexslider .slides {
+	zoom: 1;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.slides > li {
+	background-image: url(../img/img_bg_1.jpg);
+	width: 100%;
+	float: left;
+	margin-right: -100%;
+	position: relative;
+	opacity: 1;
+	display: block;
+	z-index: 2;
+}
+
+#colorlib-hero .flexslider .slides li {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	min-height: 400px;
+	position: relative;
+}
+
+#colorlib-page {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.container-wrap {
+	max-width: 1170px;
+	margin: 0 auto;
+}

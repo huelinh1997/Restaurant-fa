@@ -146,7 +146,9 @@ const Menu = ({ SubmitOrder }) => {
 	};
 	return (
 		<Fragment>
-			<section className='breadcrumb breadcrumb_bg'>
+			<section
+				className='breadcrumb breadcrumb_bg'
+				style={{ paddingTop: "110px" }}>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-lg-12'>

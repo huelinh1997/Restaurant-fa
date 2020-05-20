@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./container/home/Home";
 import Menu from "./container/menu/Menu";
 import Login from "./container/login/Login";
+import Personal from "./container/Personal/Personal";
 
 const routes = [
 	{
@@ -18,6 +19,11 @@ const routes = [
 		path: "/login",
 		exact: false,
 		main: ({ history }) => <Login history={history} />,
+	},
+	{
+		path: "/personal",
+		exact: false,
+		main: ({ history }) => <Personal history={history} />,
 	},
 ];
 
