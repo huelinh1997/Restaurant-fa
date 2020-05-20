@@ -5,7 +5,7 @@ import left_1 from "../../img/icon/left_1.svg";
 
 const About = () => {
 	return (
-		<div className='cover_1 overlay bg-light'>
+		<div className='cover_1 overlay bg-light' style={{ paddingTop: "110px" }}>
 			<div className='img_bg' data-stellar-background-ratio='0.5'>
 				<div className='container'>
 					<div className='row align-items-center justify-content-center text-center'>
