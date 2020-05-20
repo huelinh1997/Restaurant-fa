@@ -22,7 +22,7 @@ class Booking extends PureComponent {
                         <div class="row">
                             <div class="col-md-7 col-md-push-5">
                                 <div class="booking-cta">
-                                    <h1>Make your reservation</h1>
+                                    <h1> When are you available </h1>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere, soluta magnam consectetur
                                         molestias itaque
                                         ad sint fugit architecto incidunt iste culpa perspiciatis possimus voluptates aliquid consequuntur
@@ -36,7 +36,7 @@ class Booking extends PureComponent {
                                     <form>
                                         <div class="form-group">
                                             <span class="form-label">Choose date</span>
-                                            <input class="form-control" type="date" placeholder="When will you want to have a meal with him/her" />
+                                            <input class="form-control" type="date" placeholder="When will you want to have a meal your future lover" />
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
@@ -52,43 +52,8 @@ class Booking extends PureComponent {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Rooms</span>
-                                                    <select class="form-control">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Adults</span>
-                                                    <select class="form-control">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Children</span>
-                                                    <select class="form-control">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="form-btn">
-                                            <button class="submit-btn">Check availability</button>
+                                            <button class="submit-btn">Booking for a meal</button>
                                         </div>
                                     </form>
                                 </div>
