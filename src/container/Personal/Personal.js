@@ -1,19 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import person from "../../img/about.jpg";
 import CardPerson from "../../component/CardPerson/CardPerson";
+import { connect } from "react-redux";
+import male from "../../img/m.png";
+import female from "../../img/female.svg";
 
-const Personal = () => {
-	const userInfo = {
-		id: "Partner0",
-		name: "Nguyen Van B",
-		age: "24",
-		sex: 0,
-		des:
-			"Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups",
-		sex: 0,
-		avatar: person,
-		like: [],
-	};
+const Personal = ({ userInfo }) => {
 	const otherPartner = [
 		{
 			id: "Partner1",
@@ -64,15 +56,28 @@ const Personal = () => {
 			setOpenModal(true);
 		}
 	};
-	console.log("use:", user);
+
+	useEffect(() => {
+		setUser(userInfo);
+	}, [userInfo]);
+	console.log("user.avatar", user);
 
 	return (
 		<div className='container'>
 			<div id='' style={{ paddingTop: "110px" }} className='row wrapper'>
 				<aside className='personal col-md-4'>
 					<h5 className='text-center font-weight-bold'>Profile detail</h5>
-					<img className='person mt-2' src={user.avatar} alt={user.name}></img>
-					<p className='person_name pt-3'>{user.name}</p>
+					<img
+						className='person mt-2'
+						src={`${user.avatar}`}
+						alt={user.name}></img>
+					<p className='person_name pt-3'>
+						<img
+							src={user.sex === 0 ? male : female}
+							style={{ paddingRight: "5px", width: "22px" }}
+						/>
+						{user.name}
+					</p>
 					<p className=''>{user.des}</p>
 				</aside>
 				<div className='partner col-md-8'>
@@ -86,4 +91,16 @@ const Personal = () => {
 	);
 };
 
-export default Personal;
+const mapStateToProps = (state) => {
+	return {
+		userInfo: state.userInfo,
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		//SubmitOrder: (arr) => dispatch(submitOrderRequest(arr)),
+	};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Personal);

@@ -1,0 +1,278 @@
+{
+	"userInfo": {
+		"id": "Partner0",
+		"name": "Nguyen Quynh Nga",
+		"age": "24",
+		"sex": 1,
+		"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups",
+		"avatar": "https://img.freepik.com/free-photo/business-woman-sitting-with-coffee-cup-laptop_23-2148095734.jpg?size=626&ext=jpg",
+		"like": [],
+		"food": ["menu3"]
+	},
+	"menu": [
+		{
+			"id": "menu1",
+			"img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190405-rhubarb-jam-horizontal-088-1556128729.jpg?resize=768:*",
+			"name": "Rhubarb Jam",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Appetizer"
+		},
+		{
+			"id": "menu2",
+			"img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190402-rhubarb-crumble-horizontal-268-1555100876.jpg?crop=0.668xw:1.00xh;0.151xw,0&resize=768:*",
+			"name": "Rhubarb Crisp",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Appetizer"
+		},
+		{
+			"id": "menu3",
+			"img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-200305-primavera-spaghetti-squash-0070-landscape-pf-1584111550.jpg?crop=0.668xw:1.00xh;0.286xw,0&resize=768:*",
+			"name": "Chicken Primavera ",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Appetizer"
+		},
+		{
+			"id": "menu4",
+			"img": "https://www.tasteandtellblog.com/wp-content/uploads/2007/12/Bacon-Cream-Cheese-Crescent-Appetizer-Recipe-tasteandtellblog.com-1.jpg",
+			"name": "Bacon and Cream Cheese",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Appetizer"
+		},
+		{
+			"id": "menu5",
+			"img": "https://makeyourmeals.com/wp-content/uploads/2018/08/pizza-rolls.jpg",
+			"name": "Pizza Rolls",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Appetizer"
+		},
+		{
+			"id": "menu6",
+			"img": "https://jeanetteshealthyliving.com/wp-content/uploads/2015/05/Salmon-Tartare-Cucumber-Appetizer-4.jpg",
+			"name": "Salmon Tartare Cucumber Bites Appetizer",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Appetizer"
+		},
+		{
+			"id": "menu7",
+			"img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/thanksgiving-appetizers-cranberry-brie-bites-1572891505.jpg?crop=1.00xw:0.668xh;0,0&resize=640:*",
+			"name": "Easter Delight",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$50.00",
+			"isChecked": false,
+			"type": "main dishes"
+		},
+		{
+			"id": "menu8",
+			"img": "https://images.media-allrecipes.com/userphotos/300x300/7251995.jpg",
+			"name": "Spicy Pork Tenderloin ",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$60.00",
+			"isChecked": false,
+			"type": "main dishes"
+		},
+		{
+			"id": "menu9",
+			"img": "https://images.media-allrecipes.com/userphotos/300x300/7062050.jpg",
+			"name": "Al's Burmese Chicken ",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$75.00",
+			"isChecked": false,
+			"type": "main dishes"
+		},
+		{
+			"id": "menu10",
+			"img": "https://images.media-allrecipes.com/userphotos/300x300/688595.jpg",
+			"name": "Lebanese Donair",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$55.00",
+			"isChecked": false,
+			"type": "main dishes"
+		},
+		{
+			"id": "menu11",
+			"img": "https://images.media-allrecipes.com/userphotos/300x300/1122495.jpg",
+			"name": "Cardamom Maple Salmon",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "main dishes"
+		},
+		{
+			"id": "menu12",
+			"img": "https://images.media-allrecipes.com/userphotos/300x300/7234883.jpg",
+			"name": "Sweet Potato and Venison",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "main dishes"
+		},
+		{
+			"id": "menu13",
+			"img": "https://img.taste.com.au/0YmoBTzc/w643-h428-cfill-q90/taste/2016/11/maltesers-tiramisu-74785-1.jpeg",
+			"name": "Maltesers tiramisu",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$20.00",
+			"isChecked": false,
+			"type": "Desserts"
+		},
+		{
+			"id": "menu14",
+			"img": "https://img.taste.com.au/KhABSJrV/w316-h210-cfill-q80/taste/2016/11/snickers-rolls-26145-1.jpeg",
+			"name": "Snicker rolls",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Desserts"
+		},
+		{
+			"id": "menu15",
+			"img": "https://img.taste.com.au/f9f4NQQD/w316-h210-cfill-q80/taste/2016/11/aniseed-and-chocolate-parfait-24770-1.jpeg",
+			"name": "Aniseed chôcolate",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$19.00",
+			"isChecked": false,
+			"type": "Desserts"
+		},
+		{
+			"id": "menu16",
+			"img": "https://img.taste.com.au/9zAyVmzn/w316-h210-cfill-q80/taste/2016/11/apple-and-blueberry-tarts-17864-1.jpeg",
+			"name": "Apple and bluestary",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$26.00",
+			"isChecked": false,
+			"type": "Desserts"
+		},
+		{
+			"id": "menu17",
+			"img": "https://img.taste.com.au/L9_DRtJO/w316-h210-cfill-q80/taste/2016/11/napoleon-10469-1.jpeg",
+			"name": "Cake choco",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Desserts"
+		},
+		{
+			"id": "menu18",
+			"img": "https://img.taste.com.au/UoZY1Vjt/w316-h210-cfill-q80/taste/2016/11/chocolate-bullets-4280-1.jpeg",
+			"name": "Chocolate bullet",
+			"des": "They're wherein heaven seed hath nothing",
+			"price": "$40.00",
+			"isChecked": false,
+			"type": "Desserts"
+		}
+	],
+	"otherPartner": [
+		{
+			"id": "Partner1",
+			"name": "Nguyen Van A",
+			"age": "25",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 0,
+			"avatar": "https://static.vecteezy.com/system/resources/previews/000/241/070/original/flat-boy-with-vintage-glasses-avatar-vector-illustration.jpg",
+			"like": ["Partner0", "Partner2"],
+			"food": ["menu1", "menu5", "menu6", "menu7"]
+		},
+		{
+			"id": "Partner2",
+			"name": "Huyen Trang",
+			"age": "22",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 1,
+			"avatar": "https://szybkieodchudzanie.org/wp-content/uploads/2019/11/Marlen.png",
+			"like": ["Partner1"],
+			"food": ["menu10", "menu17", "menu3", "menu2", "menu6"]
+		},
+		{
+			"id": "Partner3",
+			"name": "Le Nhu Quynh",
+			"age": "21",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 1,
+			"avatar": "https://cdn3.iconfinder.com/data/icons/avatar-93/140/avatar__girl__teacher__female__women-512.png",
+			"like": ["Partner4", "Partner6"],
+			"food": ["menu9", "menu8", "menu2", "menu1", "menu14"]
+		},
+		{
+			"id": "Partner4",
+			"name": "Nguyen An",
+			"age": "26",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 0,
+			"avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxVYMAsLQ1GMaXPmPE0K7xoso_cTErjwmDV56rr7Nlxq2wO852&usqp=CAU",
+			"like": ["Partner2", "Partner3"],
+			"food": ["menu3", "menu2", "menu10", "menu15", "menu17"]
+		},
+		{
+			"id": "Partner5",
+			"name": "Quynh Anh",
+			"age": "20",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 1,
+			"avatar": "https://cdn3.iconfinder.com/data/icons/avatar-93/140/avatar__girl__teacher__female__women-512.png",
+			"like": ["Partner8"],
+			"food": ["menu9", "menu8", "menu2", "menu1", "menu14"]
+		},
+		{
+			"id": "Partner6",
+			"name": "Nguyen Hung",
+			"age": "21",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 0,
+			"avatar": "https://img.freepik.com/free-photo/medium-shot-happy-man-smiling_23-2148221808.jpg?size=626&ext=jpg",
+			"like": ["Partner5"],
+			"food": ["menu6", "menu7", "menu2", "menu1", "menu15"]
+		},
+		{
+			"id": "Partner7",
+			"name": "Le Anh Thu",
+			"age": "21",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 1,
+			"avatar": "https://img.freepik.com/free-photo/smiling-confident-businesswoman-posing-with-arms-folded_1262-20950.jpg?size=626&ext=jpg",
+			"like": ["Partner8"],
+			"food": ["menu9", "menu8", "menu2", "menu1", "menu14"]
+		},
+		{
+			"id": "Partner8",
+			"name": "Van Khoi",
+			"age": "24",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 0,
+			"avatar": "https://www.freepik.com/free-photo/close-up-portrait-man-looking-camera_5454054.htm#page=1&query=avatar&position=18",
+			"like": ["Partner5"],
+			"food": ["menu4", "menu11", "menu13", "menu18"]
+		},
+		{
+			"id": "Partner9",
+			"name": "Hanna Nguyen",
+			"age": "21",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 1,
+			"avatar": "https://img.freepik.com/free-photo/asian-woman-posing-looking-camera_23-2148255359.jpg?size=338&ext=jpg",
+			"like": ["Partner8"],
+			"food": ["menu1", "menu6", "menu15", "menu14"]
+		},
+		{
+			"id": "Partner10",
+			"name": "Le Nhu",
+			"age": "24",
+			"des": "Lorem ipsum is placeholder text commonly used in the graphic, print and publishing industries for visual mockups.",
+			"sex": 1,
+			"avatar": "https://img.freepik.com/free-photo/beautiful-brunette-serious-girl-portrait_23-2148176371.jpg?size=338&ext=jpg",
+			"like": ["Partner3"],
+			"food": ["menu18", "menu17", "menu4", "menu15", "menu16"]
+		}
+	]
+}

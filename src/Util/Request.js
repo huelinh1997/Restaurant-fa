@@ -3,7 +3,7 @@ import axios from "axios";
 class AxiosService {
 	constructor() {
 		const instance = axios.create({
-			baseURL: "xxxx",
+			baseURL: "http://localhost:3000/",
 		});
 		instance.interceptors.response.use(this.handlerSuccess, this.handlerError);
 		this.instance = instance;

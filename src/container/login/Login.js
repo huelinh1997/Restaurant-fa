@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 import Facebook from "../../component/Facebook";
 import login from "../../img/login.svg";
 import { connect } from "react-redux";
-import { saveUserAction } from "../../action/Action";
+import { saveUserAction, handleLogInAction } from "../../action/Action";
 
-const Login = ({ saveInfoUser, isLogIn }) => {
+const Login = ({ saveInfoUser, isLogIn, handleLogIn }) => {
 	return (
 		<Fragment>
 			<div
@@ -17,7 +17,8 @@ const Login = ({ saveInfoUser, isLogIn }) => {
 
 						<Facebook
 							style={{ display: "flex", alignItems: "center" }}
-							saveInfoUser={(res) => saveInfoUser(res)}
+							isLogIn={isLogIn}
+							handleLogIn={() => handleLogIn()}
 						/>
 					</div>
 				</div>
@@ -34,7 +35,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		saveInfoUser: (user) => dispatch(saveUserAction(user)),
+		//saveInfoUser: (user) => dispatch(saveUserAction(user)),
+		handleLogIn: () => dispatch(handleLogInAction()),
 	};
 };
 

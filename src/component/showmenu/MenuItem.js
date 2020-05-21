@@ -11,8 +11,10 @@ const MenuItem = ({ menu, onChecked }) => {
 
 	return (
 		<div className='single_food_item media'>
-			<img src={menu.img} className='mr-3' alt='...' />
-			<div className='media-body align-self-center pr-2'>
+			<span className='menudetail mr-3'>
+				<img className='menuDetail_img' src={menu.img} alt='...' />
+			</span>
+			<div className='media-body align-self-center pr-2 py-2'>
 				<h3>{menu.name}</h3>
 				<p>{menu.des}</p>
 				<span

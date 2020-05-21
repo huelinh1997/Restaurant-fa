@@ -83,7 +83,16 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-function TabControl({ tab1, tab2, data1, data2, tabDefault, onChecked }) {
+function TabControl({
+	tab1,
+	tab2,
+	tab3,
+	data1,
+	data2,
+	data3,
+	tabDefault,
+	onChecked,
+}) {
 	const classes = useStyles();
 	const [value, setValue] = React.useState(tabDefault);
 
@@ -97,6 +106,7 @@ function TabControl({ tab1, tab2, data1, data2, tabDefault, onChecked }) {
 				<AntTabs value={value} onChange={handleChange} aria-label='ant example'>
 					<AntTab label={tab1} />
 					<AntTab label={tab2} />
+					<AntTab label={tab3} />
 				</AntTabs>
 			</div>
 
@@ -105,6 +115,9 @@ function TabControl({ tab1, tab2, data1, data2, tabDefault, onChecked }) {
 			</TabPanel>
 			<TabPanel value={value} index={1}>
 				<ShowMenu menus={data2} onChecked={onChecked} />
+			</TabPanel>
+			<TabPanel value={value} index={2}>
+				<ShowMenu menus={data3} onChecked={onChecked} />
 			</TabPanel>
 		</div>
 	);

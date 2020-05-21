@@ -1,32 +1,15 @@
-import React, { Fragment, useState } from "react";
-import FacebookLogin from "react-facebook-login";
+import React, { useState } from "react";
 
-const Facebook = () => {
-	const [isLoggedIn, setIsLoggin] = useState(false);
+const Facebook = ({ handleLogIn, isLogIn }) => {
+	//const [isLoggedIn, setIsLoggin] = useState(false);
 	const [userId, setUserId] = useState("");
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [picture, setPicture] = useState("");
 
-	const componentClicked = () => {
-		console.log("click");
-	};
-
-	const responseFacebook = (response) => {
-		console.log("res:", response);
-		setIsLoggin(true);
-		setUserId(response.userId);
-		setName(response.name);
-		setEmail(response.email);
-		setPicture(response.picture.data.url);
-	};
 	let fbContent;
 
-	// FB.api('/me', function(response) {
-	// 		console.log(JSON.stringify(response));
-	// });
-
-	if (isLoggedIn) {
+	if (isLogIn) {
 		fbContent = (
 			<div
 				style={{
@@ -42,17 +25,15 @@ const Facebook = () => {
 		);
 	} else {
 		fbContent = (
-			<FacebookLogin
-				appId='559638961656761'
-				autoLoad={false}
-				fields='name,email,picture'
-				onClick={componentClicked}
-				callback={responseFacebook}
-			/>
+			<div onClick={handleLogIn} className='btn-FB'>
+				Log in with Facebook
+			</div>
 		);
 	}
 	return (
-		<div style={{ display: "flex", alignItems: "center" }}>{fbContent}</div>
+		<div className='wrapBtn' style={{ display: "flex", alignItems: "center" }}>
+			{fbContent}
+		</div>
 	);
 };
 

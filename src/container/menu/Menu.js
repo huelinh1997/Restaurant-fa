@@ -4,122 +4,13 @@ import TabControl from "../../component/tab/TabControl";
 import ImgFood from "../../img/food_menu/single_food_4.png";
 import Button from "@material-ui/core/Button";
 import { connect } from "react-redux";
-import { submitOrderRequest } from "../../action/Action";
+import { submitOrderRequest, getMenuFoodRequest } from "../../action/Action";
 
-const Menu = ({ SubmitOrder }) => {
-	let menu = [
-		{
-			id: 1,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$40.00",
-			isChecked: false,
-			type: "menu1",
-		},
-		{
-			id: 2,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$40.00",
-			isChecked: false,
-			type: "menu1",
-		},
-		{
-			id: 3,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$40.00",
-			isChecked: false,
-			type: "menu1",
-		},
-		{
-			id: 4,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$40.00",
-			isChecked: false,
-			type: "menu1",
-		},
-		{
-			id: 5,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$40.00",
-			isChecked: false,
-			type: "menu1",
-		},
-		{
-			id: 6,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$40.00",
-			isChecked: false,
-			type: "menu1",
-		},
-		{
-			id: 7,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$50.00",
-			isChecked: false,
-			type: "menu2",
-		},
-		{
-			id: 8,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$50.00",
-			isChecked: false,
-			type: "menu2",
-		},
-		{
-			id: 9,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$50.00",
-			isChecked: false,
-			type: "menu2",
-		},
-		{
-			id: 10,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$50.00",
-			isChecked: false,
-			type: "menu2",
-		},
-		{
-			id: 11,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$50.00",
-			isChecked: false,
-			type: "menu2",
-		},
-		{
-			id: 12,
-			img: ImgFood,
-			name: "Easter Delight",
-			des: "They're wherein heaven seed hath nothing",
-			price: "$50.00",
-			isChecked: false,
-			type: "menu2",
-		},
-	];
+const Menu = ({ SubmitOrder, getMenuFood, menu, user }) => {
 	const [menus, setMenu] = useState(menu);
 	const [menu1, setMenu1] = useState([]);
 	const [menu2, setMenu2] = useState([]);
+	const [menu3, setMenu3] = useState([]);
 	const [menuChoosing, setMenuChoosing] = useState([]);
 
 	const FilterMenu = (arr, name) => {
@@ -135,15 +26,35 @@ const Menu = ({ SubmitOrder }) => {
 
 		setMenu(menus);
 	};
+	console.log("menu:", menu);
+	console.log("menu1:", menu1);
+	console.log("menu2:", menu2);
 
 	useEffect(() => {
-		setMenu1(FilterMenu(menus, "menu1"));
-		setMenu2(FilterMenu(menus, "menu2"));
-	}, [menuChoosing]);
+		getMenuFood();
+	}, []);
+
+	useEffect(() => {
+		setMenu(menu);
+	}, [menu]);
+
+	useEffect(() => {
+		setMenu1(FilterMenu(menus, "Appetizer"));
+		setMenu2(FilterMenu(menus, "main dishes"));
+		setMenu3(FilterMenu(menus, "Desserts"));
+	}, [menuChoosing, menus]);
 
 	const handleSubmit = () => {
-		SubmitOrder(menuChoosing);
+		console.log("{ ...user, food: menuChoosing }:", {
+			...user,
+			food: menuChoosing,
+		});
+
+		SubmitOrder({ ...user, food: menuChoosing });
 	};
+
+	console.log("menu:", menu);
+	console.log("user:", user);
 	return (
 		<Fragment>
 			<section
@@ -173,10 +84,12 @@ const Menu = ({ SubmitOrder }) => {
 
 						<div className='col-lg-12'>
 							<TabControl
-								tab1='menu1'
-								tab2='menu2'
+								tab1='Món khai vị'
+								tab2='Món chính'
+								tab3='Tráng miệng'
 								data1={menu1}
 								data2={menu2}
+								data3={menu3}
 								tabDefault={0}
 								onChecked={handleOnChecked}
 							/>
@@ -196,13 +109,15 @@ const Menu = ({ SubmitOrder }) => {
 };
 const mapStateToProps = (state) => {
 	return {
-		//arr: state.bill.respone,
+		menu: state.menu,
+		user: state.userInfo,
 	};
 };
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		SubmitOrder: (arr) => dispatch(submitOrderRequest(arr)),
+		SubmitOrder: (user) => dispatch(submitOrderRequest(user)),
+		getMenuFood: () => dispatch(getMenuFoodRequest()),
 	};
 };
 
