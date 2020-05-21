@@ -36,3 +36,13 @@ export const getMenuFoodRequest = () => {
 		});
 	};
 };
+
+export const getOtherPartnerRequest = () => {
+	return (dispatch) => {
+		return ApiCall.getOtherPartner().then((res) => {
+			if (res.status === 200) {
+				dispatch({ type: Types.GET_PARTNER_RESPONSE, data: res.data });
+			} else alert("Không thể kết nối dữ liệu!");
+		});
+	};
+};

@@ -14,6 +14,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import ShareIcon from "@material-ui/icons/Share";
 import clsx from "clsx";
 import React from "react";
+import ClearIcon from "@material-ui/icons/Clear";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -39,11 +40,13 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function People({ person, handleLike }) {
+export default function People({ person, handleLike, handleUnLikePerson }) {
 	const classes = useStyles();
 	const [isLike, setIsLike] = React.useState(false);
 
 	const handleLikePerson = (id) => {
+		console.log("a");
+
 		setIsLike(!isLike);
 		handleLike(id, !isLike);
 	};
@@ -74,14 +77,14 @@ export default function People({ person, handleLike }) {
 					{person.des}
 				</Typography>
 			</CardContent>
-			<CardActions disableSpacing>
+			<CardActions disableSpacing className='px-5'>
 				<IconButton
 					aria-label='add to favorites'
 					onClick={() => handleLikePerson(person.id)}>
 					<FavoriteIcon color={isLike ? "secondary" : ""} />
 				</IconButton>
-				<IconButton aria-label='share'>
-					<ShareIcon />
+				<IconButton aria-label='clear' onClick={() => handleUnLikePerson()}>
+					<ClearIcon />
 				</IconButton>
 			</CardActions>
 		</Card>

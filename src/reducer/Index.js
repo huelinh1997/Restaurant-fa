@@ -4,6 +4,7 @@ const stateDefault = {
 	userInfo: {},
 	isLoggedIn: false,
 	menu: [],
+	otherPeople: [],
 };
 
 function reducer(state = stateDefault, action) {
@@ -27,6 +28,12 @@ function reducer(state = stateDefault, action) {
 			return {
 				...state,
 				userInfo: action.data,
+			};
+		}
+		case Types.GET_PARTNER_RESPONSE: {
+			return {
+				...state,
+				otherPeople: action.data,
 			};
 		}
 		default: {

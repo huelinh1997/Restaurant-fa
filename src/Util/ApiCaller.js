@@ -15,3 +15,7 @@ export const getUserInfo = () => {
 export const getMenuFood = () => {
 	return AxiosService.get("menu");
 };
+
+export const getOtherPartner = () => {
+	return AxiosService.get("otherPartner");
+};
